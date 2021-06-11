@@ -1,4 +1,4 @@
-syntax "Markdown" "\.(md|mkd|mkdn|markdown|mdx)$"
+syntax "Markdown" "\.(md|mkd|mkdn|markdown|mdx|mdown)$"
 
 # Tables (Github extension)
 color cyan ".*[ :]\|[ :].*"
