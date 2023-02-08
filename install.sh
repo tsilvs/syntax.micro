@@ -12,8 +12,8 @@ _fetch_sources(){
 
   cd ~/.nano/ || exit
   unzip -o "/tmp/nanorc.zip"
-  mv nanorc-master/* ./
-  rm -rf nanorc-master
+  mv nano-syntax-highlighting-master/* ./
+  rm -rf nano-syntax-highlighting-master
   rm /tmp/nanorc.zip
 }
 
