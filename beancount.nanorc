@@ -1,4 +1,4 @@
-syntax "Beancount" "(^|\.|/)beancount|bnct|bc$"
+syntax "Beancount" "(^|\.|/)(beancount|bnct|bc)$"
 
 # directives
 color red "^([0-9]{4}-[0-9]{2}-[0-9]{2} | )?[a-z-]+( |: )"
