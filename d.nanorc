@@ -14,7 +14,7 @@ color brightmagenta "'([^'\]|(\\["'abfnrtv\\]))'" "'\\(([0-3]?[0-7]{1,2}))'" "'\
 color blue "\<(abstract|override|package|private|protected|public|super|static|this)\>"
 
 ## function traits and other function related keywords
-color red "\<(in|out|inout|ref|scope|nothrow|pure|lazy)\>"
+color green "\<(in|out|inout|ref|nothrow|pure|lazy)\>"
 
 ## deprecated
 color white "deprecated"
@@ -33,9 +33,6 @@ color cyan "<[^= 	]*>" ""(\\.|[^"])*""
 
 ## printf-family format specifiers
 color yellow "%(\#|(0-+))?(s|c|d|u|b|o|x|X|e|E|f|F|g|G|a|A|r)?[A-Za-z]" "%%"
-
-## escape sequences
-color yellow "\\?('|\"|\\|0|a|b|f|n|r|t|v|x|u|U)"
 
 ## Comment highlighting
 color brightblue "//.*"
