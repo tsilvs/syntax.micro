@@ -29,7 +29,7 @@ color magenta "[(){}]" "\[" "\]"
 ## String highlighting.  You will in general want your comments and
 ## strings to come last, because syntax highlighting rules will be
 ## applied in the order they are read in.
-color cyan "<[^= 	]*>" ""(\\.|[^"])*""
+color cyan ""(\\.|[^"])*"" "`(\\.|[^"])*`"
 
 ## printf-family format specifiers
 color yellow "%(\#|(0-+))?(s|c|d|u|b|o|x|X|e|E|f|F|g|G|a|A|r)"
