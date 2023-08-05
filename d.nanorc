@@ -10,15 +10,11 @@ color green "\<((const|dynamic|reinterpret|static)_cast)\>"
 color green "\<(align|asm|assert|auto|const|export|null|static|shared|typeid|typeof|override|final)\>"
 color green "\<(and|and_eq|bitand|bitor|not|not_eq|or|or_eq|xor|xor_eq)\>"
 color brightmagenta "\<(goto|continue|break|return)\>"
-color brightcyan "^[[:space:]]*#[[:space:]]*(define|include|(un|ifn?)def|endif|el(if|se)|if|warning|error)"
+color brightcyan "\<(import|pragma|version|mixin|module|macro)>"
 color brightmagenta "'([^'\]|(\\["'abfnrtv\\]))'" "'\\(([0-3]?[0-7]{1,2}))'" "'\\x[0-9A-Fa-f]{1,2}'"
 
-##
-## GCC builtins
-color green "__attribute__[[:space:]]*\(\([^)]*\)\)" "__(aligned|asm|builtin|hidden|inline|packed|restrict|section|typeof|weak)__"
-
 #Operator Color
-color yellow "[.:;,+*|=!\%]" "<" ">" "/" "-" "&"
+color yellow "[.:;,+*|=!\%]" "<" ">" "/" "-" "&" "~"
 
 #Parenthetical Color
 color magenta "[(){}]" "\[" "\]"
