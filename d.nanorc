@@ -20,7 +20,7 @@ color green "\<(in|out|inout|ref|nothrow|pure|lazy)\>"
 color white "deprecated"
 
 #Operator Color
-color yellow "[.:;,+*|=!\%]" "<" ">" "/" "-" "&" "~" "?"
+color yellow "[.:;,+*|=!\%]" "<" ">" "/" "-" "&" "~" "\?"
 
 #Parenthetical Color
 color magenta "[(){}]" "\[" "\]"
