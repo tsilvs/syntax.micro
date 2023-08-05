@@ -29,6 +29,9 @@ color cyan "<[^= 	]*>" ""(\\.|[^"])*""
 ## printf-family format specifiers
 color yellow "%(\#|(0-+))?(s|c|d|u|b|o|x|X|e|E|f|F|g|G|a|A|r)?[A-Za-z]" "%%"
 
+## escape sequences
+color yellow "\\?('|\"|\\|0|a|b|f|n|r|t|v|x|u|U)"
+
 ## Comment highlighting
 color brightblue "//.*"
 color brightblue start="/\*" end="\*/"
