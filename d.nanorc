@@ -25,21 +25,13 @@ color magenta "[(){}]" "\[" "\]"
 ## strings to come last, because syntax highlighting rules will be
 ## applied in the order they are read in.
 color cyan "<[^= 	]*>" ""(\\.|[^"])*""
-##
-## This string is VERY resource intensive!
-#color cyan start=""(\\.|[^"])*\\[[:space:]]*$" end="^(\\.|[^"])*""
 
 ## printf-family format specifiers
-color yellow "%(\#|(0-+))?(hh|h|l|ll|q|L|j|z|Z|t)?[A-Za-z]" "%%"
+color yellow "%(\#|(0-+))?(s|c|d|u|b|o|x|X|e|E|f|F|g|G|a|A|r)?[A-Za-z]" "%%"
 
 ## Comment highlighting
 color brightblue "//.*"
 color brightblue start="/\*" end="\*/"
-
-# Highlighting for documentation comments
-color magenta "@param [a-zA-Z_][a-z0-9A-Z_]+"
-color magenta "@return"
-color magenta "@author.*"
 
 ## Trailing whitespace
 color ,green "[[:space:]]+$"
