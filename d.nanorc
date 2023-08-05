@@ -17,7 +17,7 @@ color blue "\<(abstract|override|package|private|protected|public|super|static|t
 color green "\<(in|out|inout|ref|nothrow|pure|lazy)\>"
 
 ## deprecated
-color white "deprecated"
+color brightwhite "deprecated"
 
 #Operator Color
 color yellow "[.:;,+*|=!\%]" "<" ">" "/" "-" "&" "~" "\?"
@@ -40,6 +40,7 @@ color brightyellow "\\(\#|(0-+))?('|\"|\?|\\|0|a|b|f|n|r|t|v|x|u|U)"
 ## Comment highlighting
 color brightblue "//.*"
 color brightblue start="/\*" end="\*/"
+color brightgreen start="/\+" end="\+/"
 
 ## Trailing whitespace
 color ,green "[[:space:]]+$"
