@@ -7,7 +7,7 @@ color green "\<(for|if|while|do|else|case|default|switch|foreach|foreach_reverse
 color green "\<(try|throw|catch|scope|finally)\>"
 color green "\<(align|asm|assert|auto|const|export|null|shared|typeid|typeof|final)\>"
 color brightmagenta "\<(goto|continue|break|return)\>"
-color brightcyan "\<(import|pragma|version|mixin|module|macro)>"
+color brightcyan "\<(import|pragma|version|mixin|module|macro)\>"
 color brightmagenta "'([^'\]|(\\["'abfnrtv\\]))'" "'\\(([0-3]?[0-7]{1,2}))'" "'\\x[0-9A-Fa-f]{1,2}'"
 
 ## accessors and other class/struct keywords
