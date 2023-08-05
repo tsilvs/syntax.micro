@@ -1,5 +1,5 @@
 ## D programming Language
-syntax "D" "\.(d)?|D)$"
+syntax "D" "\.d$"
 magic "^(D) (source|program)"
 comment "//"
 color brightred "\<[A-Z_][0-9A-Z_]+\>"
@@ -18,7 +18,7 @@ color blue "\<(abstract|override|package|private|protected|public|super|static|t
 color red "\<(in|out|inout|ref|scope|nothrow|pure|lazy)\>"
 
 ## deprecated
-color brightgray "deprecated"
+color white "deprecated"
 
 #Operator Color
 color yellow "[.:;,+*|=!\%]" "<" ">" "/" "-" "&" "~"
