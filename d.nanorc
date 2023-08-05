@@ -11,7 +11,7 @@ color brightcyan "\<(import|pragma|version|mixin|module|macro)\>"
 color brightmagenta "'([^'\]|(\\["'abfnrtv\\]))'" "'\\(([0-3]?[0-7]{1,2}))'" "'\\x[0-9A-Fa-f]{1,2}'"
 
 ## accessors and other class/struct keywords
-color blue "\<(abstract|override|package|private|protected|public|super|static|this)\>"
+color blue "\<(abstract|override|package|private|protected|public|super|static|this|new)\>"
 
 ## function traits and other function related keywords
 color green "\<(in|out|inout|ref|nothrow|pure|lazy)\>"
