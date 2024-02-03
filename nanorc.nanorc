@@ -44,6 +44,8 @@ icolor white ""(\\.|[^"])*""
 ## Comments
 icolor brightblue "^[[:space:]]*#.*$"
 icolor cyan "^[[:space:]]*##.*$"
+## Reminders
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 ## Trailing whitespace
 icolor ,green "[[:space:]]+$"

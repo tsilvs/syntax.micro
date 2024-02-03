@@ -60,5 +60,6 @@ color red start="\?>" end="<\?(php|=)?"
 color ,green "[[:space:]]+$"
 # multi-line comments
 color brightyellow start="/\*" end="\*/"
+color brightwhite,cyan "\<(FIXME|TODO|XXX)\>"
 # Nowdoc
 color red start="<<<'[A-Z][A-Z0-9_]*'" end="^[A-Z][A-Z0-9_]*;"

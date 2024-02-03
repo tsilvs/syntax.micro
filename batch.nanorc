@@ -26,6 +26,7 @@ color brightred "%(~[[:alpha:]$]*)?[0-9*]\>" "%%(~[[:alpha:]$]*)?[[:alpha:]]\>"
 
 # Comments.
 icolor cyan "^[[:space:]]*(\<rem\>|::).*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 # Strings.
 icolor brightyellow ""(\^.|[^"])*""

@@ -40,3 +40,4 @@ color brightgreen "`([^`\]|\\.)*`"
 # Comments
 color brightblue start="/\*" end="\*/"
 color brightblue "(^|[[:blank:]])//.*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"

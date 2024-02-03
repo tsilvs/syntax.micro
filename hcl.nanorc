@@ -31,6 +31,7 @@ color brightred "," ":"
 
 # Comments.
 color cyan "(^|[[:space:]]+)(//|#).*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 # Trailing whitespace.
 color ,green "[[:space:]]+$"

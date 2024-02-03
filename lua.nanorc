@@ -78,5 +78,8 @@ color green "\-\-.*$"
 # Multiline comments
 color green start="\s*\-\-\s*\[\[" end="\]\]"
 
+# Reminders
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
+
 # Trailing whitespaces
 color ,green "[[:space:]]+$"

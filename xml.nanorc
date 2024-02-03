@@ -19,6 +19,7 @@ color cyan "</[^> ]*>"
 color cyan "/>"
 color yellow start="<!DOCTYPE" end="[/]?>"
 color yellow start="<!--" end="-->"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 color red    "&[^;]*;"
 
 ## Trailing spaces

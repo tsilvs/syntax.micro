@@ -44,7 +44,7 @@ color brightcyan "(^|[[:space:]])##.*$"
 color green start="\"\"\"" end="\"\"\""
 
 ## Some common markers
-color brightcyan "(XXX|TODO|FIXME|\?\?\?)"
+color ,cyan "(XXX|TODO|FIXME|\?\?\?)"
 
 ## Trailing spaces
 color ,green "[[:space:]]+$"

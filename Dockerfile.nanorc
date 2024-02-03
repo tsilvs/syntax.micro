@@ -13,6 +13,9 @@ color brightmagenta "&&"
 ## Comments
 icolor cyan "^[[:space:]]*#.*$"
 
+## Reminders
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
+
 ## Blank space at EOL
 color ,green "[[:space:]]+$"
 

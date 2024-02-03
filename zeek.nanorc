@@ -37,3 +37,4 @@ color brightyellow ""(\\.|[^"])*"" "'(\\.|[^'])*'"
 
 # Comments
 color blue "(^|[[:space:]])#.*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"

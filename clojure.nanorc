@@ -29,5 +29,6 @@ color yellow "\<(true|false|nil)\>"
 color brightyellow "(["][^"]*[^\\]["])|("")"
 
 color brightblue ";.*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 color ,green "[[:space:]]+$"

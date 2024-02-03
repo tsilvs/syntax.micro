@@ -21,6 +21,7 @@ color brightyellow "\$[@^<*?%|+]|\$\([@^<*?%+-][DF]\)"
 color magenta   "\$\$|\\.?"
 color brightblack "(^|[[:space:]])#([^{].*)?$"
 color brightblack  "^	@#.*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 # Show trailing whitespace
 color ,green "[[:space:]]+$"
