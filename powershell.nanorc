@@ -24,10 +24,9 @@ icolor brightcyan "\<(class|enum|function|using|assembly|command|module|namespac
 ## Types
 icolor green "\<(string|char|byte|int|long|bool|decimal|single|double|DateTime|xml|array|hashtable|void)\>"
 
-# TODO: This logic seems a bit off... look into this
 ## Comments
 color cyan start="<#" end="#>"
-color cyan "(^|[[:space:]])#[^>].*$"
+color cyan "(^|[[:space:]])#[^>]([^#]|#[^>])*$"
 
 ## Quoted text
 color brightyellow "\"[^\"]*\""
