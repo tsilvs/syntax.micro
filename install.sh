@@ -18,8 +18,8 @@ _fetch_sources(){
 }
 
 _update_nanorc(){
-  touch ~/.nanorc
-      
+  touch $NANORC_FILE
+
   # add all includes from ~/.nano/nanorc if they're not already there
   while read -r inc; do
       if ! grep -q "$inc" "${NANORC_FILE}"; then
@@ -45,7 +45,7 @@ case "$1" in
 esac
 
 _fetch_sources;
-if [ $UPDATE_LITE ];
+if [ "$UPDATE_LITE" ];
 then
   _update_nanorc_lite
 else
