@@ -1,0 +1,7 @@
+syntax "brainfuck" "\.bf$"
+magic "brainfuck"
+
+color orange "\["
+color orange "]"
+color cyan "\+"
+color cyan "-"
