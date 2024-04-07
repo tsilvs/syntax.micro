@@ -1,33 +1,43 @@
-#!/usr/bin/env bash
+#! /usr/bin/env bash
 
-NANO_VER=$(nano --version 2>/dev/null | awk '/version/ {print $4}' |
-        awk -F . '{printf("%d%02d%02d", $1, $2, $3)}')
+function version_to_num() {
+    if [[ -z "$1" ]]; then
+        return
+    fi
+    awk -F . '{printf("%d%02d%02d", $1, $2, $3)}' <<<"$1"
+}
+
+
+NANO_VER=$(version_to_num "$(nano --version 2>/dev/null | awk '/version/ {print $4}')")
 
 if [[ -z "${NANO_VER}" ]]; then
-  printf "Cannot determine nano's version\\n" >&2
-  exit 1
+    printf "Cannot determine nano's version\n" >&2
+    exit 1
 fi
 
-printf 'Found nano version %s\n' "$(nano --version 2>/dev/null | awk '/version/ {print $4}')"
+echo "Found nano version ${NANO_VER} ($(nano --version | awk '/version/ {print $4}'))"
 
-if ((NANO_VER < 20105)); then
-  NANO_BRANCH='pre-2.1.5'
-elif ((NANO_VER < 20299)); then
-  NANO_BRANCH='pre-2.2.99'
-elif ((NANO_VER < 20302)); then
-  NANO_BRANCH='pre-2.3.2'
-elif ((NANO_VER < 20503)); then
-  NANO_BRANCH='pre-2.5.3'
-elif ((NANO_VER < 20905)); then
-  NANO_BRANCH='pre-2.9.5'
-elif ((NANO_VER < 40500)); then
-  NANO_BRANCH='pre-4.5'
-elif ((NANO_VER < 50000)); then
-  NANO_BRANCH='pre-5.0'
-else
-  NANO_BRANCH='master'
-fi
+# fetch the available "pre*" branches
+git fetch --prune origin
+branches=()
 
-printf 'Switching to branch %s\n' "${NANO_BRANCH}"
+#mapfile -t branches <<<"$(git branch -l -r --format='%(refname:short)' "origin/pre-*")"
+while IFS= read -r line; do
+    branches+=("$line")
+done < <(git for-each-ref --format='%(refname:short)' 'refs/remotes/origin/pre-*')
 
-git checkout "${NANO_BRANCH}"
+# choose the suitable branch
+target="master"
+
+for b in "${branches[@]}"; do
+    num=$(version_to_num "${b#*/pre-}")
+
+    if ((NANO_VER < num)); then
+        target="${b}"
+        break
+    fi
+done
+
+echo "Switching to branch ${target}"
+
+git checkout "${target}"
