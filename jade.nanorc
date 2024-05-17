@@ -33,8 +33,7 @@ color ,green "[[:space:]]+$"
 # Unbuffered comments
 color brightblue "\s+(//-.*)"
 # HTML-style conditional comments
-color brightmagenta start="<!" end="!>"
-color brightmagenta "<!\[endif\]-->"
+color brightmagenta start="<!(--)?\[if" end="<!\[endif\](--)?>"
 # HTML-style elements
 color yellow "<([^!].*)>"
 # Pipes
