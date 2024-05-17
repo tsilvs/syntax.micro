@@ -15,9 +15,6 @@ color cyan start="(\\|\\\\)n\[" end="]"
 ## Requests
 color brightgreen "^\.[[:space:]]*[^[[:space:]]]*[^[[:space:]]]*"
 color brightgreen "^\.[[:space:]]*[^[[:space:]]]*"
-## Comments
-color yellow "^\.\\".*$"
-color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 ## Strings
 color green "(\\|\\\\)\*(.|\(..)"
 color green start="(\\|\\\\)\*\[" end="]"
@@ -26,3 +23,6 @@ color brightred "\\\(.."
 color brightred start="\\\[" end="]"
 ## Macro arguments
 color brightcyan "\\\\\$[1-9]"
+## Comments
+color yellow "^\.\\".*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
