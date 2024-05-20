@@ -44,4 +44,4 @@ color cyan "@[A-Za-z0-9_]+"
 color ,red "[[:space:]]+$"
 
 ## reminders
-color brightwhite,yellow "(FIXME|TODO|XXX)"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"

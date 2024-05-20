@@ -41,3 +41,4 @@ color yellow "0x\w{64}"
 
 # Comments
 color blue "(^|[[:space:]])//.*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"

@@ -45,6 +45,7 @@ color brightyellow "\\(\#|(0-+))?('|\"|\?|\\|0|a|b|f|n|r|t|v|x|u|U)"
 color brightblue "//.*"
 color brightblue start="/\*" end="\*/"
 color brightgreen start="/\+" end="\+/"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 ## Trailing whitespace
 color ,green "[[:space:]]+$"

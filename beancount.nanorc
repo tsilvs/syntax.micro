@@ -18,3 +18,4 @@ color red "[*!@\"]"
 color pink "\"(.*?)\""
 # comments
 color brightblack "(^|\s);.*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"

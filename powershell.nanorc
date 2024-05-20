@@ -27,6 +27,7 @@ icolor green "\<(string|char|byte|int|long|bool|decimal|single|double|DateTime|x
 ## Comments
 color cyan start="<#" end="#>"
 color cyan "(^|[[:space:]])#[^>]([^#]|#[^>])*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 ## Quoted text
 color brightyellow "\"[^\"]*\""

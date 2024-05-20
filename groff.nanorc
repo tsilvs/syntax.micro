@@ -17,6 +17,7 @@ color brightgreen "^\.[[:space:]]*[^[[:space:]]]*[^[[:space:]]]*"
 color brightgreen "^\.[[:space:]]*[^[[:space:]]]*"
 ## Comments
 color yellow "^\.\\".*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 ## Strings
 color green "(\\|\\\\)\*(.|\(..)"
 color green start="(\\|\\\\)\*\[" end="]"

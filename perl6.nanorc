@@ -13,6 +13,7 @@ color brightred "".*"|qq\|.*\|"
 color white "[sm]/.*/"
 color brightblue start="(^use| = new)" end=";"
 color brightgreen "#.*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 color brightred start="<<EOSQL" end="EOSQL"
 
 ## Trailing spaces
