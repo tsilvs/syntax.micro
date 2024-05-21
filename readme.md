@@ -27,7 +27,7 @@ This automatically unpacks all the `.nanorc` files to `~/.nano`.
 #### Note
 
 Some syntax definitions which exist in Nano upstream may be preferable to the ones provided by this package.
-The ` install.sh` script may be run with `-l` or `--lite` to insert the included syntax definitions from this package with *lower* precedence than the ones provided by the standard package.
+The `install.sh` script may be run with `-l` or `--lite` to insert the included syntax definitions from this package with *lower* precedence than the ones provided by the standard package.
 
 ### 2. Package managers
 
