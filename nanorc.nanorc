@@ -15,7 +15,6 @@ color yellow    "\<yellow\>"
 color cyan      "\<cyan\>"
 color white     "\<white\>"
 color black     "\<black\>"
-color normal    "\<normal\>"
 ## Light/bright colors
 color lightred          "\<(light|bright)red\>"
 color lightgreen        "\<(light|bright)green\>"
@@ -24,8 +23,7 @@ color lightmagenta      "\<(light|bright)magenta\>"
 color lightyellow       "\<(light|bright)yellow\>"
 color lightcyan         "\<(light|bright)cyan\>"
 color lightwhite        "\<(light|bright)white\>"
-color lightblack        "\<(light|bright)black\>"
-color normal            "\<(light|bright)normal\>"
+color lightblack        "\<(light|bright)black\>" "\<gr[ea]y\>"
 ## 256 colors
 color pink      "\<pink\>"
 color purple    "\<purple\>"
@@ -50,6 +48,9 @@ color sand      "\<sand\>"
 color tawny     "\<tawny\>"
 color brick     "\<brick\>"
 color crimson   "\<crimson\>"
+color normal    "\<normal\>"
+## hex color
+color green     "#[0-9][0-9][0-9]"
 
 ## Keywords
 color green "^[[:space:]]*(set|unset|syntax|header|magic|formatter|linter|comment|tabgives|include|extendssyntax|bind|unbind)\>"
@@ -66,8 +67,10 @@ color brightgreen "^[[:space:]]*(set|unset)[[:space:]]+(afterends|allow_insecure
 color white "[[:blank:]](start=)?".+""
 
 ## Comments
-color brightblue "^[[:space:]]*#.*$"
+## excluding hex color
+color brightblue "^[[:space:]]*#.*$" "[[:space:]]#.{0,2}[^[:xdigit:]].*$"
 color cyan "^[[:space:]]*##.*$"
+
 ## Reminders
 color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
