@@ -46,18 +46,19 @@ Feel free to add your official package manager.
 
 The files should be placed inside of the `~/.nano/` directory.
 
-You can put the files in another directory inside the correct `.nano` folder.
-For example: `~/.nano/nanorc/`.
-For readability will use `$install_path` for the path of your choose (in *system wide* the path is always `/usr/share/nano-syntax-highlighting/`).
+You may put the files to a different directory, for example to `~/.nano/nanorc/`.
+For readability, we use `$install_path` to represent the path of your choice (in *system wide* the path is always `/usr/share/nano-syntax-highlighting/`).
 
-For user, only run:
+For single user, run:
 
-`git clone git@github.com:galenguyer/nano-syntax-highlighting.git $install_path` or
-`git clone https://github.com/galenguyer/nano-syntax-highlighting.git $install_path`
+- `git clone git@github.com:galenguyer/nano-syntax-highlighting.git $install_path`
+  - or with HTTPS: `git clone https://github.com/galenguyer/nano-syntax-highlighting.git $install_path`
+- and then switch to the suitable branch: `$install_path/tool/switch-branch.sh`
 
 For system wide, run:
 
-`sudo git clone https://github.com/galenguyer/nano-syntax-highlighting.git $install_path`
+- `sudo git clone https://github.com/galenguyer/nano-syntax-highlighting.git $install_path`
+- `$install_path/tool/switch-branch.sh`
 
 ## Configuration
 
