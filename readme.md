@@ -13,13 +13,13 @@ There are three ways to install this repo.
 Copy the following code to download and run the installer script:
 
 ```sh
-curl https://raw.githubusercontent.com/galenguyer/nano-syntax-highlighting/master/install.sh | sh
+curl https://raw.githubusercontent.com/galenguyer/nano-syntax-highlighting/master/install.sh | bash
 ```
 
 If your machine doesn't have `curl` command, use this code:
 
 ```sh
-wget https://raw.githubusercontent.com/galenguyer/nano-syntax-highlighting/master/install.sh -O- | sh
+wget https://raw.githubusercontent.com/galenguyer/nano-syntax-highlighting/master/install.sh -O- | bash
 ```
 
 This automatically unpacks all the `.nanorc` files to `~/.nano`.

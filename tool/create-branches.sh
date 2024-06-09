@@ -16,7 +16,7 @@ if [ "${BASH_VERSINFO[0]}" -lt 4 ]; then
     exit 1
 fi
 
-# to ensure this list enumerates all created branches
+# NOTE: remember to also sync with install.sh
 declare -A branches=(
     [pre-6.0]=pre-6.0
     [pre-5.0]=pre-5.0
