@@ -2,7 +2,7 @@ syntax "Rpmspec" "\.spec$" "\.rpmspec$"
 
 color cyan  "\<(Icon|ExclusiveOs|ExcludeOs):"
 color cyan  "\<(BuildArch|BuildArchitectures|ExclusiveArch|ExcludeArch):"
-color cyan  "\<(Conflicts|Obsoletes|Provides|Requires|Requires\(.*\)|Enhances|Suggests|BuildConflicts|BuildRequires|Recommends|PreReq|Supplements):"
+color cyan  "\<(Conflicts|Obsoletes|Provides|Requires|Requires\(.*\)|Enhances|Suggests|BuildConflicts|BuildRequires|BuildRequires\(.*\)|Recommends|PreReq|Supplements):"
 color cyan  "\<(Epoch|Serial|Nosource|Nopatch):"
 color cyan  "\<(AutoReq|AutoProv|AutoReqProv):"
 color cyan  "\<(Copyright|License|Summary|Summary\(.*\)|Distribution|Vendor|Packager|Group|Source[0-9]*|Patch[0-9]*|BuildRoot|Prefix):"
