@@ -1,0 +1,21 @@
+filetype: pug
+detect:
+    filename: "(\\.pug$|\\.jade$)"
+rules:
+    - comment:
+        start: "(^|\\s)//-?"
+        end: "$"
+        rules:
+            - todo: "(TODO|FIXME|XXX|TBD):?"
+    - statement: "^\\s*\\b(if|else|else if|unless|while|until|case|when|default|for|each|block|prepend|append|mixin|extends|include|yield)\\b"
+    - identifier: "^\\s*[a-zA-Z][\\w-]*|\\.[\\w-]+|#[\\w-]+"
+    - symbol.brackets: "\\(|\\)"
+    - attribute: "\\b[a-zA-Z][\\w-]*\\s*="
+    - constant.string: "\"[^\"]*\"|'[^']*'"
+    - special: "^\\s*(:|-|=|\\+)|#\\{|\\}|[-=]>|:\\s"
+    - preproc: "^\\s*(!!!|doctype)\\b"
+    - constant.number: "\\b[0-9]+\\b"
+    - symbol.operator: "[!%&*+\\-~^/=<>]"
+    - identifier: "\\$[\\w-]+"
+    - special: "^\\s*:(javascript|coffee(-script)?|markdown|stylus|sass|less)\\s*$"
+    - error: "\\$"
